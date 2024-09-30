@@ -1,24 +1,51 @@
-﻿namespace MauiAppGuiaCursos
+﻿
+
+namespace MauiAppGuiaCursos
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void Primeiro_Clicked(object sender, EventArgs e)
         {
-            count++;
+            try
+            {
+                Navigation.PushAsync(new Anos.Primeiro());
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Não encontrado", ex.Message, "OK");
+            }
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void Segundo_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new Anos.Segundo());
+
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Não encontrado", ex.Message, "OK");
+            }
+        }
+
+        private void Terceiro_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new Anos.Terceiro());
+
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Não encontrado", ex.Message, "OK");
+            }
         }
     }
 
