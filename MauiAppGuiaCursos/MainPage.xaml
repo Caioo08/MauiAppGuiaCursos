@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppGuiaCursos.MainPage"
              Background="Gray"
-             Title="Desenvolvimento de Sistemas">
+             Title="">
 
     <ScrollView>
         <Grid RowDefinitions="*,*,*,*,*"
-              RowSpacing="5" ColumnSpacing="20"
-              Padding="0" Margin="10"
-              ColumnDefinitions="*, *, *">
-            <Button Grid.Row="1" Grid.Column="1" Text="1° ANO" TextColor="White" FontSize="30" Background="Black" Clicked="Primeiro_Clicked"/>
-            <Button Grid.Row="2" Grid.Column="1" Text="2° ANO" TextColor="White" FontSize="30" Background="Black" Clicked="Segundo_Clicked"/>
-            <Button Grid.Row="3" Grid.Column="1" Text="3° ANO" TextColor="White" FontSize="30" Background="Black" Clicked="Terceiro_Clicked"/>
+              RowSpacing="30" ColumnSpacing="20"
+              Padding="0" Margin="40"
+              ColumnDefinitions="*">
+            <Button Grid.Row="1" Grid.Column="0" Text="1° ANO" TextColor="White" FontSize="30" Background="Black" Clicked="Primeiro_Clicked"/>
+            <Button Grid.Row="2" Grid.Column="0" Text="2° ANO" TextColor="White" FontSize="30" Background="Black" Clicked="Segundo_Clicked"/>
+            <Button Grid.Row="3" Grid.Column="0" Text="3° ANO" TextColor="White" FontSize="30" Background="Black" Clicked="Terceiro_Clicked"/>
         </Grid>
     </ScrollView>
 
