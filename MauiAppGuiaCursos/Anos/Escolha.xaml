@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppGuiaCursos.Anos.Escolha"
+             Background="#121d30"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <Grid RowDefinitions="*,*,*,*"
+              RowSpacing="30" ColumnSpacing="20"
+              Padding="0" Margin="15"
+              ColumnDefinitions="*,*">
+            <Label Text="Selecione um Ano" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="30" VerticalOptions="Center" TextColor="White" HorizontalTextAlignment="Center"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="1° ANO" TextColor="White" FontSize="30" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Primeiro_Clicked"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="2° ANO" TextColor="White" FontSize="30" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Segundo_Clicked"/>
+            <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="3° ANO" TextColor="White" FontSize="30" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Terceiro_Clicked"/>
+        </Grid>
+    </ScrollView>
+
+
+</ContentPage>
