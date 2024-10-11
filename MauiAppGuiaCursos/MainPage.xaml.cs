@@ -20,6 +20,11 @@ namespace MauiAppGuiaCursos
                 DisplayAlert("Não encontrado", ex.Message, "OK");
             }
         }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+        }
     }
 
 }

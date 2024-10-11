@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppGuiaCursos.Anos.Terceiro">
+             x:Class="MauiAppGuiaCursos.Anos.Terceiro"
+             Background="#121d30">
     <VerticalStackLayout>
-        <Label/>
+        <StackLayout Padding="20">
+            <Button Text="Programação Web III" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked"/>
+            <Label x:Name="text1" Text="Foco em frameworks mais avançados para o frontend, como React ou Angular, além da integração com backend usando APIs e banco de dados." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Programação de Aplicativos Mobile II" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_1"/>
+            <Label x:Name="text2" Text="Aborda o desenvolvimento avançado de aplicativos móveis, integração com APIs, persistência de dados e publicação de apps em lojas de aplicativos." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Internet, Protocolos e Segurança de Sistemas da Informação" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_2"/>
+            <Label x:Name="text3" Text="Explora o funcionamento da internet, protocolos de comunicação (TCP/IP, HTTP), redes de computadores e medidas de segurança para proteger dados e sistemas contra vulnerabilidades e ataques." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Qualidade e Teste de Software" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_3"/>
+            <Label x:Name="text4" Text="Ensina a garantir a qualidade dos sistemas por meio de testes automatizados, testes de integração e validação de requisitos, utilizando ferramentas e metodologias como JUnit ou Selenium." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Planejamento e Desenvolvimento do TCC" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_4"/>
+            <Label x:Name="text5" Text="Disciplina voltada para a execução do TCC, onde os alunos planejam, desenvolvem e documentam um sistema ou aplicativo como projeto final do curso, aplicando todas as habilidades adquiridas." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Sistemas Embarcados" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_5"/>
+            <Label x:Name="text6" Text="Introduz o conceito de sistemas embarcados, que são sistemas de computação dedicados a executar funções específicas em dispositivos, como microcontroladores, programação de placas Arduino e Raspberry Pi." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

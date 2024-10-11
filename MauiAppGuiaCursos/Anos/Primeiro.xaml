@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiAppGuiaCursos.Anos.Primeiro">
+             x:Class="MauiAppGuiaCursos.Anos.Primeiro"
+             Background="#121d30">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <StackLayout Padding="20" >
+            <Button Text="Programação Web I" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked"/>
+            <Label x:Name="text1" Text="Introdução ao desenvolvimento para a web, cobrindo HTML, CSS, abordando a criação de páginas estáticas e dinâmicas." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Análise e Projeto de Sistemas" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_1"/>
+            <Label x:Name="text2" Text="Ensina a identificar os requisitos de software e projetar soluções que atendam a esses requisitos" IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Design Digital" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_2"/>
+            <Label x:Name="text3" Text="Introduz os conceitos de design gráfico, interface de usuário (UI) e experiência do usuário (UX)" IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Fundamentos da Informática" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_3"/>
+            <Label x:Name="text4" Text="Disciplina introdutória que explora o funcionamento básico de hardware, software e sistemas operacionais, além dos principais componentes de um computador." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Técnicas de Programção e Algoritmos" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_4"/>
+            <Label x:Name="text5" Text="Explora a construção de algoritmos e o desenvolvimento lógico para resolução de problemas computacionais, com foco em estruturas de controle, laços e funções, utilizando Portugol" IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+            <Button Text="Banco de Dados I" Margin="5" TextColor="White" Background="#224" BorderColor="White" BorderWidth=".4" Clicked="Button_Clicked_5"/>
+            <Label x:Name="text6" Text="Introdução ao modelo relacional, SQL, criação e manipulação de tabelas, e normalização de dados." IsVisible="False" Margin="5" HorizontalTextAlignment="Center"/>
+        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
